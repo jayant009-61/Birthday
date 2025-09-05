@@ -1,0 +1,304 @@
+/* Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html, #root {
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-size: 400% 400%;
+  animation: gradient 12s ease infinite;
+}
+
+.input-container {
+  text-align: center;
+}
+
+.input-container h1 {
+  margin-bottom: 1rem;
+  font-size: 5rem;
+  color: #333;
+}
+
+.input-container input {
+  padding: 10px 15px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  width: 400px;
+  height: 30px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+}
+.input-container input:hover {
+  transform: scale(1.05);
+}
+.input-container button {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #ff6ec4, #7873f5);
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  width: 100px;
+}
+
+.input-container button:hover {
+  transform: scale(1.05);
+}
+
+.birthday-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  z-index: -2;
+}
+
+.overlay {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.4);
+  flex-direction: column;
+}
+
+.overlay h1 {
+  color: #fff;
+  font-size: 5rem;
+  text-align: center;
+  text-shadow: 2px 2px 15px black;
+  animation: pop 1s ease-in-out infinite alternate;
+}
+.overlay h2 {
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 15px black;
+  animation: pop 1s ease-in-out infinite alternate;
+}
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes pop {
+  from { transform: scale(1); }
+  to { transform: scale(1.1); }
+} */
+
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html, #root {
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-size: 400% 400%;
+  animation: gradient 12s ease infinite;
+}
+
+.input-container {
+  text-align: center;
+}
+
+.input-container h1 {
+  margin-bottom: 1rem;
+  font-size: 5rem;
+  color: #333;
+}
+
+.input-container input {
+  padding: 10px 15px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  width: 400px;
+  height: 45px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+}
+.input-container input:hover {
+  transform: scale(1.05);
+}
+.input-container button {
+  margin-top: 1rem;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #ff6ec4, #7873f5);
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  width: 120px;
+}
+.input-container button:hover {
+  transform: scale(1.05);
+}
+
+.birthday-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  z-index: -2;
+}
+
+.overlay {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.4);
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.overlay h1 {
+  color: #fff;
+  font-size: 5rem;
+  text-align: center;
+  text-shadow: 2px 2px 15px black;
+  animation: pop 1s ease-in-out infinite alternate;
+}
+.overlay h2 {
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: 2px 2px 15px black;
+  animation: pop 1s ease-in-out infinite alternate;
+  margin-top: 0.5rem;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes pop {
+  from { transform: scale(1); }
+  to { transform: scale(1.1); }
+}
+
+/* 📱 Mobile (up to 480px) */
+@media (max-width: 480px) {
+  .input-container h1 {
+    font-size: 1rem;
+  }
+
+  .input-container input {
+    width: 90%;
+    font-size: 1rem;
+    height: 40px;
+  }
+
+  .input-container button {
+    width: 100px;
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .overlay h1 {
+    font-size: 2rem;
+  }
+
+  .overlay h2 {
+    font-size: 1rem;
+  }
+}
+
+/* 📲 Tablet (481px – 768px) */
+@media (max-width: 768px) {
+  .input-container h1 {
+    font-size: 2rem;
+  }
+
+  .input-container input {
+    width: 80%;
+    font-size: 1rem;
+  }
+
+  .overlay h1 {
+    font-size: 3rem;
+  }
+
+  .overlay h2 {
+    font-size: 1rem;
+  }
+}
+
+/* 💻 Medium Laptops (769px – 1200px) */
+@media (max-width: 1200px) {
+  .input-container h1 {
+    font-size: 4rem;
+  }
+
+  .input-container input {
+    width: 300px;
+  }
+
+  .overlay h1 {
+    font-size: 3rem;
+  }
+
+  .overlay h2 {
+    font-size: 1rem;
+  }
+}
