@@ -53,7 +53,8 @@ const App = () => {
 
           {/* Greeting */}
           <div className="overlay">
-            <h1>🎂 Happy Birthday {name} 🎉</h1><br /><br />
+            <h1>🎂 Happy Birthday {name} 🎉</h1><br /><br /> 
+            {/* ... */}
             <h2>You’re officially older, but don’t worry—you’re still not as old as you’ll be next year 😜</h2>
             <h2>Congrats on surviving another trip around the sun without too many wrinkles 😆🎂</h2>
           </div>
