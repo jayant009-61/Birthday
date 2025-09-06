@@ -48,7 +48,7 @@ const App = () => {
         <div className="birthday-container">
           {/* Background Video */}
           <video autoPlay loop className="background-video">
-            <source src="/src/assets/3831835-uhd_4096_2160_25fps.mp4" type="video/mp4" />
+            <source src="/3831835-uhd_4096_2160_25fps.mp4" type="video/mp4" />
           </video>
 
           {/* Greeting */}
@@ -61,7 +61,7 @@ const App = () => {
 
           {/* Birthday Song */}
           <audio ref={audioRef} loop>
-            <source src="/src/assets/birthday-card-73275.mp3" type="audio/mpeg" />
+            <source src="/birthday-card-73275.mp3" type="audio/mpeg" />
           </audio>
         </div>
       )}
